@@ -2,6 +2,8 @@
 
 ![kde-dock-paprius](/assets/kde-dock-paprius.webp)
 
+[KDE Store](https://store.kde.org/p/2381236/)
+
 A fork of KDE Plasma's Power & Battery widget that keeps all of the original features while adding more battery styles and customization.
 
 Best used together with the **[Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)**.
