@@ -65,7 +65,7 @@
         ],
         "Icon": "battery-full",
         "License": "GPL-2.0-or-later",
-        "Version": "0.5.1",
+        "Version": "1.0.0",
         "Website": "https://github.com/fosvcat/better-kde-battery",
         "BugReportUrl": "https://github.com/fosvcat/better-kde-battery/issues"
     },

@@ -54,6 +54,26 @@ Check your version: `plasmashell --version`
 
 ## Install / Update / Uninstall
 
+### From a release
+
+Download `better-kde-battery-<version>.plasmoid` from the [Releases](https://github.com/Fosvcat/better-kde-battery/releases) page.
+
+**Install**: right-click the panel → "Add Widgets…" → "Get New Widgets…" → "Install Widget From Local File…", and pick the downloaded file. Or from a terminal:
+
+```bash
+kpackagetool6 -t Plasma/Applet -i better-kde-battery-<version>.plasmoid
+```
+
+**Update**: "Install Widget From Local File…" refuses a widget that is already installed, and `kpackagetool6 -u` resets the widget's system tray settings. To keep them, replace the installed files and restart Plasma:
+
+```bash
+dir=~/.local/share/plasma/plasmoids/io.github.fosvcat.betterkdebattery
+rm -r "$dir" && mkdir -p "$dir" && unzip -q better-kde-battery-<version>.plasmoid -d "$dir"
+systemctl --user restart plasma-plasmashell
+```
+
+### From the source
+
 Download and extract the repository, then run in its root directory:
 
 ```bash
@@ -80,6 +100,18 @@ To put Better KDE Battery in the system tray, right-click it and open "Configure
 - Strings taken over from the original widget use the system's installed translations of the original, through `i18nd("plasma_applet_org.kde.plasma.battery", …)`.
 - Strings added by this project use their own translation domain. Translations live in `po/<lang>.po`, and the compiled `.mo` files ship with the package (`package/contents/locale/`).
   After changing strings or translations, run `tools/update-translations.sh`.
+
+
+## Releasing
+
+Set `KPlugin.Version` in `package/metadata.json`, commit, then push a matching tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The [release workflow](.github/workflows/release.yml) checks that the tag matches the version, builds `better-kde-battery-1.0.0.plasmoid` from `package/` and publishes it as a GitHub release.
 
 
 ## Sources and License
