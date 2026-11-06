@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: better-kde-battery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-05 17:10+0000\n"
+"PO-Revision-Date: 2026-11-05 00:00+0000\n"
+"Last-Translator: fosvcat\n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "@info The color setting uses its default value"
+msgid "Default"
+msgstr "預設"
+
+msgctxt "@action:button"
+msgid "Use Default Color"
+msgstr "使用預設顏色"
+
+msgctxt "@title:group"
+msgid "Preview"
+msgstr "預覽"
+
+msgctxt "@label:slider Battery level of the preview"
+msgid "Charge: %1%"
+msgstr "電量：%1%"
+
+msgctxt "@label:slider Power profile of the preview"
+msgid "Power profile:"
+msgstr "效能模式："
+
+msgctxt "@label Power profile"
+msgid "Power Save"
+msgstr "省電"
+
+msgctxt "@label Power profile"
+msgid "Balanced"
+msgstr "平衡"
+
+msgctxt "@label Power profile"
+msgid "Performance"
+msgstr "效能"
+
+msgctxt "@option:check Preview state"
+msgid "Plugged in"
+msgstr "接上電源"
+
+msgctxt "@option:check Preview state"
+msgid "Sleep blocked"
+msgstr "阻止休眠"
+
+msgctxt "@info"
+msgid "These controls only change the preview, not the system."
+msgstr "以上調整只影響預覽，不會改變系統。"
+
+msgctxt "@title:group"
+msgid "Ring"
+msgstr "圓環"
+
+msgctxt "@label:listbox"
+msgid "Display mode:"
+msgstr "顯示方式："
+
+msgctxt "@item:inlistbox Display mode"
+msgid "Ring starting at 0°"
+msgstr "圓環，0° 起點"
+
+msgctxt "@item:inlistbox Display mode"
+msgid "Ring starting at 180°"
+msgstr "圓環，180° 起點"
+
+msgctxt "@item:inlistbox Display mode: the ring fills like a container of liquid"
+msgid "Liquid container"
+msgstr "液體容器"
+
+msgctxt "@option:check Fill the ring counterclockwise"
+msgid "Reverse direction"
+msgstr "反轉方向"
+
+msgctxt "@label:slider"
+msgid "Size:"
+msgstr "大小："
+
+msgctxt "@label Percentage"
+msgid "%1%"
+msgstr "%1%"
+
+msgctxt "@label:slider"
+msgid "Thickness:"
+msgstr "粗細："
+
+msgctxt "@title:group"
+msgid "Ring Colors"
+msgstr "圓環顏色"
+
+msgctxt "@label:chooser"
+msgid "Remaining charge:"
+msgstr "剩餘電量："
+
+msgctxt "@label:chooser"
+msgid "Used up:"
+msgstr "已用電量："
+
+msgctxt "@label:slider Opacity of the used-up part of the ring"
+msgid "Used up opacity:"
+msgstr "已用電量不透明度："
+
+msgctxt "@label:chooser"
+msgid "Charging:"
+msgstr "充電中："
+
+msgctxt "@label:chooser"
+msgid "Low battery:"
+msgstr "低電量："
+
+msgctxt "@title:group"
+msgid "Number"
+msgstr "數字"
+
+msgctxt "@option:check"
+msgid "Show the battery level in the ring"
+msgstr "在圓環中顯示電量"
+
+msgctxt "@label:listbox Font weight"
+msgid "Weight:"
+msgstr "字重："
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Regular"
+msgstr "標準"
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Semibold"
+msgstr "半粗"
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Bold"
+msgstr "粗體"
+
+msgctxt "@option:check"
+msgid "Same color as the ring"
+msgstr "數字顏色跟隨圓環顏色"
+
+msgctxt "@label:chooser"
+msgid "Number color:"
+msgstr "數字顏色："
+
+msgctxt "@title:group"
+msgid "Behavior"
+msgstr "行為"
+
+msgctxt "@label:listbox"
+msgid "Low battery at:"
+msgstr "低電量門檻："
+
+msgctxt "@item:inlistbox %1 is a percentage"
+msgid "Power Management setting (%1%)"
+msgstr "跟隨電源管理設定 (%1%)"
+
+msgctxt "@item:inlistbox"
+msgid "Custom"
+msgstr "自訂"
+
+msgctxt "@label:listbox"
+msgid "Charging color:"
+msgstr "充電顏色："
+
+msgctxt "@item:inlistbox Use the charging color…"
+msgid "As soon as AC is plugged in"
+msgstr "接上電源即顯示"
+
+msgctxt "@item:inlistbox Use the charging color…"
+msgid "Only while actually charging"
+msgstr "僅在實際充電時顯示"
+
+msgctxt "@label:listbox"
+msgid "Sleep blocked:"
+msgstr "阻止休眠時："
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "No change"
+msgstr "無變化"
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “-”"
+msgstr "顯示符號「-」"
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “*”"
+msgstr "顯示符號「*」"
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “!”"
+msgstr "顯示符號「!」"
+
+msgctxt "@title:group"
+msgid "Power Profile Indicator"
+msgstr "效能模式指示器"
+
+msgctxt "@option:check"
+msgid "Show a dot in power save and performance mode"
+msgstr "啟用指示器（省電和效能模式時顯示圓點）"
+
+msgctxt "@label:listbox"
+msgid "Position:"
+msgstr "位置："
+
+msgctxt "@item:inlistbox Corner"
+msgid "Bottom right"
+msgstr "右下"
+
+msgctxt "@item:inlistbox Corner"
+msgid "Top right"
+msgstr "右上"
+
+msgctxt "@item:inlistbox Corner"
+msgid "Bottom left"
+msgstr "左下"
+
+msgctxt "@item:inlistbox Corner"
+msgid "Top left"
+msgstr "左上"
+
+msgctxt "@label:chooser Power profile indicator color"
+msgid "Performance:"
+msgstr "效能顏色："
+
+msgctxt "@label:chooser Power profile indicator color"
+msgid "Power save:"
+msgstr "省電顏色："
+
+msgctxt "@action:button"
+msgid "Restore Defaults"
+msgstr "還原預設值"
+
+msgctxt "@action:inmenu Open the widget's appearance settings"
+msgid "Customize…"
+msgstr "自訂…"
+
+msgctxt "@title:group Settings page for the widget's appearance"
+msgid "Customize"
+msgstr "自訂"

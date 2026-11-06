@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <!--
+    better-kde-battery: settings of the ring icon.
+    Keep the defaults in sync with `defaults` in ui/configCustomize.qml
+    (used by its "Restore Defaults" button) and with the fallbacks in
+    ui/RingBatteryIcon.qml.
+  -->
+  <group name="General">
+    <!-- Ring -->
+    <entry name="displayMode" type="Int">
+      <label>0: ring starting at the top (0°), 1: ring starting at the bottom (180°), 2: liquid container (empties from the top).</label>
+      <default>0</default>
+      <min>0</min>
+      <max>2</max>
+    </entry>
+    <entry name="ringCounterClockwise" type="Bool">
+      <label>If true, the ring fills counterclockwise instead of clockwise (display modes 0 and 1).</label>
+      <default>false</default>
+    </entry>
+    <entry name="ringScale" type="Int">
+      <label>Size of the ring in percent; 100 is 82% of the icon size.</label>
+      <default>100</default>
+      <min>70</min>
+      <max>130</max>
+    </entry>
+    <entry name="ringThicknessScale" type="Int">
+      <label>Width of the ring in percent; 100 is 14.5% of its outer diameter.</label>
+      <default>100</default>
+      <min>70</min>
+      <max>130</max>
+    </entry>
+
+    <!-- Colors; an empty string follows the color scheme -->
+    <entry name="colorFilled" type="String">
+      <label>Color of the remaining charge. Empty: text color.</label>
+      <default></default>
+    </entry>
+    <entry name="colorEmpty" type="String">
+      <label>Color of the used-up part (drawn at emptyOpacity). Empty: text color.</label>
+      <default></default>
+    </entry>
+    <entry name="emptyOpacity" type="Int">
+      <label>Opacity of the used-up part, in percent.</label>
+      <default>35</default>
+      <min>0</min>
+      <max>100</max>
+    </entry>
+    <entry name="colorCharging" type="String">
+      <label>Color of the remaining charge while charging. Empty: positive text color.</label>
+      <default></default>
+    </entry>
+    <entry name="colorLow" type="String">
+      <label>Color of the remaining charge when the battery is low. Empty: negative text color.</label>
+      <default></default>
+    </entry>
+
+    <!-- Number -->
+    <entry name="showNumber" type="Bool">
+      <label>Whether to show the percentage in the middle of the ring.</label>
+      <default>true</default>
+    </entry>
+    <entry name="numberSize" type="Int">
+      <label>Size of the number, in percent of the default size.</label>
+      <default>100</default>
+      <min>70</min>
+      <max>130</max>
+    </entry>
+    <entry name="numberWeight" type="Int">
+      <label>Font weight of the number: 0 regular, 1 demibold, 2 bold.</label>
+      <default>1</default>
+      <min>0</min>
+      <max>2</max>
+    </entry>
+    <entry name="numberFollowsRingColor" type="Bool">
+      <label>If true, the number has the same color as the remaining charge (including the charging and low battery colors).</label>
+      <default>true</default>
+    </entry>
+    <entry name="colorNumber" type="String">
+      <label>Color of the number when numberFollowsRingColor is false. Empty: text color.</label>
+      <default></default>
+    </entry>
+
+    <!-- Behavior -->
+    <entry name="lowLevelFollowSystem" type="Bool">
+      <label>If true, use the "Low level" from the Power Management settings as the low battery threshold.</label>
+      <default>true</default>
+    </entry>
+    <entry name="lowLevelCustom" type="Int">
+      <label>Low battery threshold in percent, used when lowLevelFollowSystem is false.</label>
+      <default>10</default>
+      <min>1</min>
+      <max>99</max>
+    </entry>
+    <entry name="chargingColorWhen" type="Int">
+      <label>When to use the charging color: 0 as soon as AC is plugged in, 1 only while actually charging.</label>
+      <default>0</default>
+      <min>0</min>
+      <max>1</max>
+    </entry>
+    <entry name="sleepBlockedSymbol" type="Int">
+      <label>While sleep and screen locking are manually blocked, show instead of the number: 0 nothing different, 1 "-", 2 "*", 3 "!".</label>
+      <default>1</default>
+      <min>0</min>
+      <max>3</max>
+    </entry>
+
+    <!-- Power profile indicator -->
+    <entry name="profileIndicator" type="Bool">
+      <label>Whether to show a small dot for the power save and performance profiles.</label>
+      <default>true</default>
+    </entry>
+    <entry name="profileIndicatorSize" type="Int">
+      <label>Size of the power profile dot in percent of its default size.</label>
+      <default>100</default>
+      <min>70</min>
+      <max>130</max>
+    </entry>
+    <entry name="profileIndicatorPosition" type="Int">
+      <label>Corner of the power profile dot: 0 bottom right, 1 top right, 2 bottom left, 3 top left.</label>
+      <default>0</default>
+      <min>0</min>
+      <max>3</max>
+    </entry>
+    <entry name="colorProfilePerformance" type="String">
+      <label>Color of the power profile dot in the performance profile. Empty: built-in blue.</label>
+      <default></default>
+    </entry>
+    <entry name="colorProfilePowerSaver" type="String">
+      <label>Color of the power profile dot in the power save profile. Empty: built-in yellow.</label>
+      <default></default>
+    </entry>
+  </group>
+
+</kcfg>

@@ -1,0 +1,78 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Id": "io.github.fosvcat.betterkdebattery",
+        "Name": "Power & Battery (Better KDE Battery)",
+        "Name[ar]": "الطاقة والبطارية (Better KDE Battery)",
+        "Name[az]": "Güc və batareya (Better KDE Battery)",
+        "Name[be]": "Сілкаванне і батарэя (Better KDE Battery)",
+        "Name[bg]": "Захранване и батерия (Better KDE Battery)",
+        "Name[ca@valencia]": "Energia i bateria (Better KDE Battery)",
+        "Name[ca]": "Energia i bateria (Better KDE Battery)",
+        "Name[cs]": "Napájení a baterie (Better KDE Battery)",
+        "Name[de]": "Energie & Akku (Better KDE Battery)",
+        "Name[es]": "Energía y batería (Better KDE Battery)",
+        "Name[eu]": "Energia eta bateria (Better KDE Battery)",
+        "Name[fi]": "Virranhallinta (Better KDE Battery)",
+        "Name[fr]": "Énergie et batterie (Better KDE Battery)",
+        "Name[ga]": "Cumhacht & Cadhnra (Better KDE Battery)",
+        "Name[he]": "חשמל וסוללה (Better KDE Battery)",
+        "Name[hu]": "Energia és akkumulátor (Better KDE Battery)",
+        "Name[ia]": "Energia (Power) & Batteria (Better KDE Battery)",
+        "Name[is]": "Orka og rafhlaða (Better KDE Battery)",
+        "Name[it]": "Alimentazione e batteria (Better KDE Battery)",
+        "Name[ja]": "電源とバッテリー (Better KDE Battery)",
+        "Name[ka]": "კვება და ელემენტი (Better KDE Battery)",
+        "Name[ko]": "전원과 배터리 (Better KDE Battery)",
+        "Name[lt]": "Maitinimas ir akumuliatorius (Better KDE Battery)",
+        "Name[lv]": "Energokontrole un baterija (Better KDE Battery)",
+        "Name[nl]": "Energie & batterij (Better KDE Battery)",
+        "Name[nn]": "Straum og batteri (Better KDE Battery)",
+        "Name[pa]": "ਪਾਵਰ ਅਤੇ ਬੈਟਰੀ (Better KDE Battery)",
+        "Name[pl]": "Zasilanie i bateria (Better KDE Battery)",
+        "Name[pt]": "Energia & Bateria (Better KDE Battery)",
+        "Name[pt_BR]": "Fonte de energia e bateria (Better KDE Battery)",
+        "Name[ro]": "Alimentare și baterie (Better KDE Battery)",
+        "Name[ru]": "Питание и батарея (Better KDE Battery)",
+        "Name[sk]": "Nízka úroveň pripojenej batérie (Better KDE Battery)",
+        "Name[sl]": "Moč in baterija (Better KDE Battery)",
+        "Name[sv]": "Ström och batteri (Better KDE Battery)",
+        "Name[ta]": "ஆற்றலும் மின்கலமும் (Better KDE Battery)",
+        "Name[tr]": "Güç ve Pil (Better KDE Battery)",
+        "Name[uk]": "Живлення і акумулятор (Better KDE Battery)",
+        "Name[zh_CN]": "电源和电池 (Better KDE Battery)",
+        "Name[zh_TW]": "電源與電池 (Better KDE Battery)",
+        "Description": "A customizable fork of the Plasma Power & Battery widget",
+        "Description[zh_CN]": "可自定义的 Plasma“电源和电池”小组件分支",
+        "Description[zh_TW]": "可自訂的 Plasma「電源與電池」小工具分支",
+        "Authors": [
+            {
+                "Name": "Sebastian Kügler",
+                "Email": "sebas@kde.org"
+            },
+            {
+                "Name": "Kai Uwe Broulik",
+                "Email": "kde@privat.broulik.de"
+            },
+            {
+                "Name": "fosvcat"
+            }
+        ],
+        "Category": "System Information",
+        "EnabledByDefault": false,
+        "FormFactors": [
+            "desktop"
+        ],
+        "Icon": "battery-full",
+        "License": "GPL-2.0-or-later",
+        "Version": "0.5.1",
+        "Website": "https://github.com/fosvcat/better-kde-battery",
+        "BugReportUrl": "https://github.com/fosvcat/better-kde-battery/issues"
+    },
+    "Keywords": "Power Management;Battery;System;Energy;",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-NotificationAreaCategory": "Hardware",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.powermanagement"
+    ]
+}

@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the better-kde-battery package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: better-kde-battery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-05 17:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "@info The color setting uses its default value"
+msgid "Default"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Use Default Color"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Preview"
+msgstr ""
+
+msgctxt "@label:slider Battery level of the preview"
+msgid "Charge: %1%"
+msgstr ""
+
+msgctxt "@label:slider Power profile of the preview"
+msgid "Power profile:"
+msgstr ""
+
+msgctxt "@label Power profile"
+msgid "Power Save"
+msgstr ""
+
+msgctxt "@label Power profile"
+msgid "Balanced"
+msgstr ""
+
+msgctxt "@label Power profile"
+msgid "Performance"
+msgstr ""
+
+msgctxt "@option:check Preview state"
+msgid "Plugged in"
+msgstr ""
+
+msgctxt "@option:check Preview state"
+msgid "Sleep blocked"
+msgstr ""
+
+msgctxt "@info"
+msgid "These controls only change the preview, not the system."
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Ring"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Display mode:"
+msgstr ""
+
+msgctxt "@item:inlistbox Display mode"
+msgid "Ring starting at 0°"
+msgstr ""
+
+msgctxt "@item:inlistbox Display mode"
+msgid "Ring starting at 180°"
+msgstr ""
+
+msgctxt "@item:inlistbox Display mode: the ring fills like a container of liquid"
+msgid "Liquid container"
+msgstr ""
+
+msgctxt "@option:check Fill the ring counterclockwise"
+msgid "Reverse direction"
+msgstr ""
+
+msgctxt "@label:slider"
+msgid "Size:"
+msgstr ""
+
+msgctxt "@label Percentage"
+msgid "%1%"
+msgstr ""
+
+msgctxt "@label:slider"
+msgid "Thickness:"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Ring Colors"
+msgstr ""
+
+msgctxt "@label:chooser"
+msgid "Remaining charge:"
+msgstr ""
+
+msgctxt "@label:chooser"
+msgid "Used up:"
+msgstr ""
+
+msgctxt "@label:slider Opacity of the used-up part of the ring"
+msgid "Used up opacity:"
+msgstr ""
+
+msgctxt "@label:chooser"
+msgid "Charging:"
+msgstr ""
+
+msgctxt "@label:chooser"
+msgid "Low battery:"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Number"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Show the battery level in the ring"
+msgstr ""
+
+msgctxt "@label:listbox Font weight"
+msgid "Weight:"
+msgstr ""
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Regular"
+msgstr ""
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Semibold"
+msgstr ""
+
+msgctxt "@item:inlistbox Font weight"
+msgid "Bold"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Same color as the ring"
+msgstr ""
+
+msgctxt "@label:chooser"
+msgid "Number color:"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Behavior"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Low battery at:"
+msgstr ""
+
+msgctxt "@item:inlistbox %1 is a percentage"
+msgid "Power Management setting (%1%)"
+msgstr ""
+
+msgctxt "@item:inlistbox"
+msgid "Custom"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Charging color:"
+msgstr ""
+
+msgctxt "@item:inlistbox Use the charging color…"
+msgid "As soon as AC is plugged in"
+msgstr ""
+
+msgctxt "@item:inlistbox Use the charging color…"
+msgid "Only while actually charging"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Sleep blocked:"
+msgstr ""
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "No change"
+msgstr ""
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “-”"
+msgstr ""
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “*”"
+msgstr ""
+
+msgctxt "@item:inlistbox What the icon shows while sleep is blocked"
+msgid "Show “!”"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Power Profile Indicator"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Show a dot in power save and performance mode"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Position:"
+msgstr ""
+
+msgctxt "@item:inlistbox Corner"
+msgid "Bottom right"
+msgstr ""
+
+msgctxt "@item:inlistbox Corner"
+msgid "Top right"
+msgstr ""
+
+msgctxt "@item:inlistbox Corner"
+msgid "Bottom left"
+msgstr ""
+
+msgctxt "@item:inlistbox Corner"
+msgid "Top left"
+msgstr ""
+
+msgctxt "@label:chooser Power profile indicator color"
+msgid "Performance:"
+msgstr ""
+
+msgctxt "@label:chooser Power profile indicator color"
+msgid "Power save:"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Restore Defaults"
+msgstr ""
+
+msgctxt "@action:inmenu Open the widget's appearance settings"
+msgid "Customize…"
+msgstr ""
+
+msgctxt "@title:group Settings page for the widget's appearance"
+msgid "Customize"
+msgstr ""
