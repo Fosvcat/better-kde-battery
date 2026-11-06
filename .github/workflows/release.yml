@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2026 fosvcat
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# Pushing a tag such as v1.0.0 builds an installable .plasmoid from package/
+# and publishes it as a GitHub release. The tag must match KPlugin.Version in
+# package/metadata.json.
+
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check version
+        id: version
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          metadata_version="$(jq -r '.KPlugin.Version' package/metadata.json)"
+          if [ "$version" != "$metadata_version" ]; then
+            echo "::error file=package/metadata.json::Tag $GITHUB_REF_NAME does not match KPlugin.Version ($metadata_version). Update metadata.json and tag again."
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Build .plasmoid
+        id: build
+        run: |
+          file="better-kde-battery-${{ steps.version.outputs.version }}.plasmoid"
+          mkdir -p dist
+          # A .plasmoid is a zip with metadata.json at its root
+          (cd package && zip -r -X "../dist/$file" .)
+          unzip -l "dist/$file"
+          unzip -Z1 "dist/$file" | grep -qx 'metadata.json'
+          echo "file=dist/$file" >> "$GITHUB_OUTPUT"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            # Re-run for an existing release: replace the file
+            gh release upload "$GITHUB_REF_NAME" "${{ steps.build.outputs.file }}" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "${{ steps.build.outputs.file }}" \
+              --title "Better KDE Battery ${{ steps.version.outputs.version }}" \
+              --generate-notes \
+              --verify-tag
+          fi

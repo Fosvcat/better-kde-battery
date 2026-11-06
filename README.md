@@ -56,6 +56,25 @@ Check your version: `plasmashell --version`
 
 ## Install / Update / Uninstall
 
+### From a release
+
+Download `better-kde-battery-<version>.plasmoid` from the [Releases](https://github.com/Fosvcat/better-kde-battery/releases) page.
+
+**Install**: right-click the panel → "Add Widgets…" → "Get New Widgets…" → "Install Widget From Local File…", and pick the downloaded file. Or from a terminal:
+
+```bash
+kpackagetool6 -t Plasma/Applet -i better-kde-battery-<version>.plasmoid
+```
+
+**Update**: 
+
+```bash
+kpackagetool6 -t Plasma/Applet -u better-kde-battery-<version>.plasmoid
+systemctl --user restart plasma-plasmashell
+```
+
+### From the source
+
 Download and extract the repository, then run in its root directory:
 
 ```bash
